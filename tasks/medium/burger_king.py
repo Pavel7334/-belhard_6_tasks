@@ -38,3 +38,63 @@
     - курица
     - булка
 """
+
+
+def bread(func):
+    def wrapper(*args, **kwargs):
+        print(r"</------------\>")
+        result = func(*args, **kwargs)
+        print(r"<\____________/>")
+        return result
+
+    return wrapper
+
+
+def tomato(func):
+    def wrapper(*args, **kwargs):
+        print(f"*** помидоры ****")
+        result = func(*args, **kwargs)
+        return result
+
+    return wrapper
+
+
+def salad(func):
+    def wrapper(*args, **kwargs):
+        print(f"~~~~ салат ~~~~~")
+        result = func(*args, **kwargs)
+        return result
+
+    return wrapper
+
+
+def cheese(func):
+    def wrapper(*args, **kwargs):
+        print(f"^^^^^ сыр ^^^^^^")
+        result = func(*args, **kwargs)
+        return result
+
+    return wrapper
+
+
+def onion(func):
+    def wrapper(*args, **kwargs):
+        print(f"----- лук ------")
+        result = func(*args, **kwargs)
+        return result
+
+    return wrapper
+
+
+@bread
+@onion
+@tomato
+def beef():
+    print(f"### говядина ###")
+
+
+@bread
+@cheese
+@salad
+def chicken():
+    print(f"|||| курица ||||")
