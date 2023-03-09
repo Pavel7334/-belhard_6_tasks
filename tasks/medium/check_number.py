@@ -18,18 +18,3 @@ def check_number(n):
 check_number(10)
 print(check_number(10))
 
-
-
-
-
-
-
-    # return True if (n & (n - 1)) == 0 else False      # 1-e решение
-
-
-
-    # if num == 1:                                      2-e решение
-    #     return True
-    # if num & 1:
-    #     return False
-    # return check_number(num >> 1)
