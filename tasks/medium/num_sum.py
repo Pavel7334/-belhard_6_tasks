@@ -15,11 +15,3 @@ def sum_of_numbers(n):
 foo = sum_of_numbers(23)
 print(foo)
 
-
-# def sum_of_numbers(num):
-#     sum_integers = 0
-#     for num in nums:
-#         if isinstance(num, int):
-#             sum_integers += num
-#         return sum_of_numbers(num + num)
-
